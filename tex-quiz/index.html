@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TeX 单选测验</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+          processEscapes: true
+        },
+        options: {
+          skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="./questions.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="测验信息">
+        <div>
+          <p class="eyebrow" id="courseLabel">Quiz</p>
+          <h1 id="quizTitle">TeX 单选测验</h1>
+        </div>
+        <div class="topbar-actions">
+          <div class="timer" id="timer" hidden>
+            <i data-lucide="timer"></i>
+            <span id="timerText">00:00</span>
+          </div>
+          <button class="ghost icon-button" id="themeToggle" type="button" aria-label="切换主题" title="切换主题">
+            <i data-lucide="moon"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="panel" id="startView">
+        <div class="intro-text" id="introText" hidden></div>
+        <form class="student-form" id="studentForm">
+          <label>
+            <span>姓名</span>
+            <input id="studentName" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span>班级</span>
+            <input id="studentClass" name="className" autocomplete="organization" />
+          </label>
+          <label>
+            <span>学号</span>
+            <input id="studentId" name="studentId" autocomplete="off" />
+          </label>
+          <button class="primary" id="startButton" type="submit">
+            <i data-lucide="play"></i>
+            开始答题
+          </button>
+        </form>
+        <p class="source-status" id="sourceStatus">正在加载题库...</p>
+      </section>
+
+      <section class="quiz-layout" id="quizView" hidden>
+        <aside class="question-nav" aria-label="题号导航">
+          <div class="progress-copy">
+            <span id="progressText">第 1 / 1 题</span>
+            <strong id="answeredText">0 已答</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressFill"></div>
+          </div>
+          <div class="number-grid" id="numberGrid"></div>
+        </aside>
+
+        <section class="question-panel" aria-live="polite">
+          <div class="question-meta">
+            <span id="questionBadge">单选</span>
+            <span id="questionScore">0 分</span>
+          </div>
+          <div class="question-text" id="questionText"></div>
+          <div class="options" id="options"></div>
+          <div class="quiz-actions">
+            <button class="secondary" id="prevButton" type="button">
+              <i data-lucide="chevron-left"></i>
+              上一题
+            </button>
+            <button class="secondary" id="nextButton" type="button">
+              下一题
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button class="primary" id="submitButton" type="button">
+              <i data-lucide="send"></i>
+              交卷
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <section class="result-layout" id="resultView" hidden>
+        <section class="score-panel">
+          <p class="eyebrow">成绩</p>
+          <div class="score-number" id="scoreNumber">0</div>
+          <div class="score-detail" id="scoreDetail"></div>
+          <div class="result-actions">
+            <button class="primary" id="downloadCsvButton" type="button">
+              <i data-lucide="download"></i>
+              导出结果
+            </button>
+            <button class="secondary" id="copySummaryButton" type="button">
+              <i data-lucide="clipboard"></i>
+              复制摘要
+            </button>
+            <button class="ghost" id="restartButton" type="button">
+              <i data-lucide="rotate-ccw"></i>
+              重新开始
+            </button>
+          </div>
+          <p class="submit-status" id="submitStatus"></p>
+        </section>
+        <section class="review-panel" id="reviewPanel" aria-label="答题回看"></section>
+      </section>
+    </main>
+  </body>
+</html>

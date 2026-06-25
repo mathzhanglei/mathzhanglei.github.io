@@ -1,0 +1,31 @@
+编号,题干,A,B,C,D,答案,分值,启用
+q1,"For any complex number $z=x+iy$, $|e^z|=e^x$ always holds.",正确,错误,,,A,1,是
+q2,"The function $\sin z$ is entire (analytic everywhere in $\mathbb{C}$).",正确,错误,,,A,1,是
+q3,"The equation $\cos z=0$ has only real solutions $z=\pi/2+n\pi$ ($n$ is an integer) in the complex plane.",正确,错误,,,A,1,是
+q4,"For any complex $z$, $\sin(iz)=i\sinh z$.",正确,错误,,,A,1,是
+q5,"If $z=x+iy$, then $|\cos z|^2=\cos^2 x+\sinh^2 y$.",正确,错误,,,A,1,是
+q6,"The tangent function $\tan z$ is $\pi$-periodic.",正确,错误,,,A,1,是
+q7,"For any non-zero complex $z$, the multi-valued equality $\log(z^2)=2\log z$ holds as sets.",正确,错误,,,B,1,是
+q8,"The principal logarithm satisfies $\mathrm{Log}(e^z)=z$ for all complex $z$.",正确,错误,,,B,1,是
+q9,"The principal value $\mathrm{Log}(-1)=i\pi$.",正确,错误,,,A,1,是
+q10,"For any non-zero complex $z$, $e^{\log z}=z$ (using the multi-valued logarithm).",正确,错误,,,A,1,是
+q11,"Using the branch $L_{(-\pi)}$, we have $L_{(-\pi)}(-1)=i\pi$.",正确,错误,,,B,1,是
+q12,"All possible values of $i^i$ are real numbers.",正确,错误,,,A,1,是
+q13,"Under the principal branch, $(-1)^{\sqrt{2}}$ is a real number.",正确,错误,,,B,1,是
+q14,"For any integer $n$, $e^{(2n+1)\pi i}=-1$.",正确,错误,,,A,1,是
+q15,"The hyperbolic sine function $\sinh z$ is entire.",正确,错误,,,A,1,是
+q16,"If $\sin z=0$, then $z=n\pi$ for some integer $n$.",正确,错误,,,A,1,是
+q17,"For any complex $z$, $\cos(z+\pi)=-\cos z$.",正确,错误,,,A,1,是
+q18,"The principal logarithm of $1+i$ equals $\ln(\sqrt{2})+i(\pi/4)$.",正确,错误,,,A,1,是
+q19,"All values of the multi-valued logarithm $\log 1$ are $2k\pi i$ ($k$ is an integer).",正确,错误,,,A,1,是
+q20,"As sets, $\log(1/z)=-\log z$ for any non-zero $z$.",正确,错误,,,A,1,是
+q21,"Under the principal branch, the modulus of $(1-i)^i$ equals $e^{-\pi/4}$.",正确,错误,,,B,1,是
+q22,"If $c$ is an integer, the complex power function $z^c$ is single-valued.",正确,错误,,,A,1,是
+q23,"Under the principal branch, $\frac{d}{dz}(z^c)=c z^{c-1}$ holds for non-zero $z$.",正确,错误,,,A,1,是
+q24,"All possible values of $1^{1/\pi}$ lie on the unit circle.",正确,错误,,,A,1,是
+q25,"Using the branch $L_{(\pi/4)}$, we have $L_{(\pi/4)}(i^2)=2L_{(\pi/4)}(i)$.",正确,错误,,,A,1,是
+q26,"For any complex $z$, $\sin^2 z+\cos^2 z=1$.",正确,错误,,,A,1,是
+q27,"The singularities of $\cot z$ occur at $z=n\pi$ ($n$ is an integer).",正确,错误,,,A,1,是
+q28,"The principal logarithm of $-i$ equals $-i\pi/2$.",正确,错误,,,A,1,是
+q29,"For any non-zero $z$ and positive integer $n$, $\log(z^n)=n\log z$ as sets.",正确,错误,,,B,1,是
+q30,"On the domain $D_\alpha=\{r e^{i\theta}: r>0,\ \alpha<\theta<\alpha+2\pi\}$, the branch $L_\alpha(z)=\ln r+i\theta$ is analytic.",正确,错误,,,A,1,是
